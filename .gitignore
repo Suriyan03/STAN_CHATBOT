@@ -1,0 +1,10 @@
+# Virtual Environment
+venv/
+*.pyc
+__pycache__/
+
+# Secrets and Local Files
+.env
+.streamlit/
+db/
+*.sqlite3
