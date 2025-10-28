@@ -99,7 +99,7 @@ streamlit run frontend/app.py
 ```
 The UI will automatically open in your browser, ready for testing.
 
-##🧪 Demonstration and Testing
+## 🧪 Demonstration and Testing
 
 Use the Streamlit UI to validate the key functional requirements:
 
@@ -131,3 +131,4 @@ The system utilizes two distinct types of memory, managed by **LangChain**:
   When a conversation reaches a threshold (4 messages), a specialized `summarizer_llm` creates a concise note of key facts.  
   This note is then embedded and stored in **ChromaDB**.  
   Before any new chat, the user's latest query is compared against all historical notes in ChromaDB, and the most semantically relevant facts are injected into the system prompt — enabling “fake memory” callbacks and deep personalization.
+
