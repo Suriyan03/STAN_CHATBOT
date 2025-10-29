@@ -42,8 +42,8 @@ The architecture is built for **modularity and scalability**, separating the cor
 
 ```bash
 # Clone the project
-git clone [YOUR_GITHUB_REPO_URL]
-cd chatbot-portfolio-project
+git clone https://github.com/Suriyan03/STAN_CHATBOT.git
+cd STAN_CHATBOT
 
 # Create and activate a Python virtual environment
 python -m venv venv
@@ -131,4 +131,5 @@ The system utilizes two distinct types of memory, managed by **LangChain**:
   When a conversation reaches a threshold (4 messages), a specialized `summarizer_llm` creates a concise note of key facts.  
   This note is then embedded and stored in **ChromaDB**.  
   Before any new chat, the user's latest query is compared against all historical notes in ChromaDB, and the most semantically relevant facts are injected into the system prompt — enabling “fake memory” callbacks and deep personalization.
+
 
